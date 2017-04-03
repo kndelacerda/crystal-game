@@ -7,10 +7,10 @@ $( document )
     $( '#randomNumber' )
       .text( Random );
 
-    var num1 = Math.floor( Math.random() * 10 + 1 )
-    var num2 = Math.floor( Math.random() * 11 + 2 )
-    var num3 = Math.floor( Math.random() * 12 + 3 )
-    var num4 = Math.floor( Math.random() * 13 + 4 )
+    var blueNum = Math.floor( Math.random() * 10 + 1 )
+    var greenNum = Math.floor( Math.random() * 11 + 2 )
+    var redNum = Math.floor( Math.random() * 12 + 3 )
+    var yellowNum = Math.floor( Math.random() * 13 + 4 )
 
     var bagTotal = 0;
     var wins = 0;
@@ -27,12 +27,12 @@ $( document )
       Random = Math.floor( Math.random() * 100 );
       $( '#randomNumber' )
         .text( Random );
-      num1 = Math.floor( Math.random() * 10 + 1 );
-      num2 = Math.floor( Math.random() * 11 + 2 );
-      num3 = Math.floor( Math.random() * 12 + 3 );
-      num4 = Math.floor( Math.random() * 13 + 4 );
+      blueNum = Math.floor( Math.random() * 10 + 1 );
+      greenNum = Math.floor( Math.random() * 11 + 2 );
+      redNum = Math.floor( Math.random() * 12 + 3 );
+      yellowNum = Math.floor( Math.random() * 13 + 4 );
       bagTotal = 0;
-      $( '#finalTotal' )
+      $( '#gameTotal' )
         .text( bagTotal );
     }
 
@@ -57,9 +57,9 @@ $( document )
 //Readies the crystals to react to clicking 
     $( '#blue-one' )
       .on( 'click', function() {
-        bagTotal = bagTotal + num1;
+        bagTotal = bagTotal + blueNum;
 
-        $( '#finalTotal' )
+        $( '#gameTotal' )
           .text( bagTotal );
         //Determines win-lose conditions
         if ( bagTotal == Random ) {
@@ -70,9 +70,9 @@ $( document )
       } )
     $( '#green-two' )
       .on( 'click', function() {
-        bagTotal = bagTotal + num2;
+        bagTotal = bagTotal + greenNum;
         console.log( "New bagTotal= " + bagTotal );
-        $( '#finalTotal' )
+        $( '#gameTotal' )
           .text( bagTotal );
         //Determines win-lose conditions
         if ( bagTotal == Random ) {
@@ -83,9 +83,9 @@ $( document )
       } )
     $( '#red-three' )
       .on( 'click', function() {
-        bagTotal = bagTotal + num3;
+        bagTotal = bagTotal + redNum;
         console.log( "New bagTotal= " + bagTotal );
-        $( '#finalTotal' )
+        $( '#gameTotal' )
           .text( bagTotal );
         //Determines win-lose conditions
         if ( bagTotal == Random ) {
@@ -96,9 +96,9 @@ $( document )
       } )
     $( '#yellow-four' )
       .on( 'click', function() {
-        bagTotal = bagTotal + num4;
+        bagTotal = bagTotal + yellowNum;
         console.log( "New bagTotal= " + bagTotal );
-        $( '#finalTotal' )
+        $( '#gameTotal' )
           .text( bagTotal );
         //Determines win-lose conditions
         if ( bagTotal == Random ) {
