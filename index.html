@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Crystal Collector</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Macondo|Spirax" rel="stylesheet">
+</head>
+<body>
+	<div class="header">
+		<h1>Crystal Collector</h1>
+	</div>
+	<div class="quest">
+		<h3>Hello, dear adventurer...</h3>
+		</br>
+		<ol>
+			<li>I am in need of some <span>crystals</span> for a magic potion.</li>
+			<li>There are four types of crystals I need.</li>
+			<li>By clicking on a crystal, you will add a specific amount of that item into your bag.</li>
+			<li>You will help me create an awesome potion by finding the correct amount of crystals.</li>
+			<li>If you overstuff your bag beyond my request, you will lose everything.</li>
+			<li>The value of each crystal is hidden from you until you click on it.</li>
+			<li>Upon restarting the game, I will request a new amount of crystals.</li>
+		</ol>
+	</div>
+	<div class="numberToMatch">
+		<h2>Crystals Needed: <span id= "randomNumber"></span></h2>
+	</div>
+	<div class="winsAndLosses">
+		<h2>Wins: <span id= "numberWins"></span>
+			</br>
+			Losses: <span id= "numberLosses"></span>
+		</h2>
+	</div>
+	<div class="gems">
+		<img src="assets/images/blue.png" class=gemImage id="blue-one" alt="Blue Crystal">
+		<img src="assets/images/green.png" class=gemImage id="green-two" alt="Green Crystal">
+		<img src="assets/images/red.png" class=gemImage id= "red-three" alt="Red Crystal">
+		<img src="assets/images/yellow.png" class=gemImage id= "yellow-four" alt="Yellow Crystal">
+	</div>
+	<div class="bagTotal">
+		<h2>Your bag:
+			<span id="finalTotal"></span>
+		</h2>
+	</div>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.js"></script>
+	<script type="text/javascript" src="assets/javascript/javascript.js"></script>
+</body>
+<!-- Crytal Hunting Background music! Not stoppable >:) -->
+	<audio autoplay="true" src="https://opengameart.org/sites/default/files/No%20More%20Magic_5.mp3">
+</html>
